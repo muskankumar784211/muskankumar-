@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page with Loader</title>
+  
+  <title>Simple NavBar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  
+    
+    
+  </div>
+
+  <!-- JavaScript to hide loader -->
+  <script>
+    window.addEventListener("load", function() {
+      const loader = document.getElementById("loader");
+      const content = document.getElementById("content");
+
+      loader.style.display = "none";     // hide loader
+      content.style.display = "block";   // show content
+    });
+  </script>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="page1.html">About</a>
+    <a href="page2.html">Skills</a>
+    <a href="page3.html">Contact</a>
+    <a href="page5.html">project</a>
+  </div>
+  <div class="profile-img">
+    <!-- Image in place of two h1 headings -->
+    <img src="myphoto.jpg">
+
+    
+  </div>
+
+  <div class="content">
+    <h1>Hi,<br>I Am Muskan Kumar</h1>
+    <p>Muskan Kumar a passionate and curious student currently pursuing his B.Tech in Electronics and Communication Engineering (ECE) at MRCET College in Hyderabad. Originally from Bihar, Muskan has a deep interest in technology and is actively building his skills in web development. He is learning HTML, CSS, JavaScript, and React, while also diving into Python programming. With a strong desire to grow and create, Muskan is on a journey to become a skilled developer, turning his ideas into reality one line of code at a time.</p>
+  <br><br>
+  
+  </div>
+  <div class="button-container">
+    <a href="page1.html"  <button class="btn">About Me</button>></a>
+    <a href="page4.html" <button class="btn">Download CV</button>></a>
+  </div>
+   <div class="contact-form">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>
